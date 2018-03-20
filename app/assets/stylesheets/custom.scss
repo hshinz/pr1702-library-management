@@ -1,0 +1,42 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* header */
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #2cc8c8;;
+}
+.navbar-form .input-group > .form-control {
+    width: 250%;
+}
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+  z-index: 2;
+  margin-left: 256px;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #42a3ae;
+  background-color: transparent;
+}
+
+/* pagination */
+.pagination {
+  float: center;
+}
+    
+/* footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 35px;
+    }
+  }
+}
