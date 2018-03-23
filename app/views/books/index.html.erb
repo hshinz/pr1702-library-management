@@ -1,9 +1,23 @@
-<h1>All books</h1>
-<ul class="books">
+<% provide :title, t(".all_books") %>
+<%= render 'layouts/slides' %>
+<div class="container-fluid bg-3 text-center">    
+  <h3><%= t ".list" %></h3><br>
   <% @books.each do |book| %>
-    <li>
-      
-      <%= link_to book.name, book %>
-    </li>
-  <% end %>
-</ul>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="thumbnail">
+        <%= image_tag book.image %>
+        <br>
+        <p><%= book.name %></p>
+        <p><%= link_to book.author.name %></p>
+        <button class="btn btn-success"><%= t ".detail" %></button>
+      </div>
+    </div>
+  </div>
+  <ul class="pager">
+    <li><a href="#"><%= t ".previous" %></a></li>
+    <li><a href="#"><%= t ".next" %></a></li>
+  </ul> 
+</div>
+<% end %><br><br>
+
