@@ -1,8 +1,8 @@
 class BooksController < ApplicationController
   def index
-  	@book = book.all
+  	@books = Book.all
   end
   def show
-    @book = book.find(params[:id])
+    @books = Book.find(params[:id])
   end
 end

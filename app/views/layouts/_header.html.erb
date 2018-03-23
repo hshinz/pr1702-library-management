@@ -22,35 +22,27 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",   '#' %></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-            <li role="presentation" class="dropdown-header">SÁCH NÓI</li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Truyện đọc</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Phát triển bản thân</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bí quyết kinh doanh</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hạt giống tâm hồn</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Truyện thiếu nhi</a></li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t ".categories" %><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1"> 
+            <li role="presentation" class="dropdown-header"><%= t ".audio_book" %></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".story" %></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".self_growth" %></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".business_secret" %></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".seed_soul" %></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".children's_story"%></a></li>
             <li role="presentation" class="divider"></li>
-            <li role="presentation" class="dropdown-header">KINH DOANH</li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Khởi nghiệp</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Marketing - Bán hàng</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quản trị - Lãnh đạo</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Đầu tư - Tài chính</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kiến thức kinh tế</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kinh doanh tổng hợp</a></li>
+            <li role="presentation" class="dropdown-header"><%= t ".business"%></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".startup"%></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".sales_marketing"%></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".leadership_manager"%></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".finance_invest"%></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".economic_knowledge"%></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= t ".general_business" %></a></li>
             
           </ul>
-          <!-- <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sách nói</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kinh doanh</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kỹ năng</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tủ sách gia đình</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tạp chí & Chuyên đề</a></li>
-           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tuyển tập chọn lọc</a></li>
-          </ul> -->
         </li>
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> <%= t ".signup" %></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span><%= t ".login" %></a></li>
       </ul>
     </nav>
   </div>
