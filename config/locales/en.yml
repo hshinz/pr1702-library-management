@@ -36,6 +36,8 @@ en:
       email: "Email"
       password: "Password"
       newuser: "New user?"
+      remember: "Remember me"
+      rememberme: "Remember me on this computer"
   users:
     create:
       signup: "Sign up now!"
