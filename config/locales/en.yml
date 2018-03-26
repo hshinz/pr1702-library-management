@@ -30,4 +30,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  sessions:
+    new:
+      login: "Login"
+      email: "Email"
+      password: "Password"
+      newuser: "New user?"
+      remember: "Remember me"
+      rememberme: "Remember me on this computer"
+  users:
+    create:
+      signup: "Sign up now!"
