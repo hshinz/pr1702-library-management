@@ -2,6 +2,7 @@ class Book < ApplicationRecord
   belongs_to :author
   belongs_to :category
   belongs_to :publisher
+  has_many :borrows
   validates :author_id, presence: true
   validates :category_id, presence: true
   validates :publisher_id, presence: true

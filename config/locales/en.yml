@@ -5,6 +5,7 @@ en:
     book_create: "Book create!"
     login: "Please login!"
     delete_user: "User deleted!"
+    request_success: "Request success!"
   layouts:
     header:
       account: "Account"
@@ -86,6 +87,11 @@ en:
       invite_read: "Welcome you to read"
       publisher: "Publisher"
       request: "REQUEST"
+    request_book:
+      close: "Close"
+      request: "Request"
+      return: "Enter Date Return Book"
+      save: "Save"
   users:
     new:
       create: "Create my account!"
