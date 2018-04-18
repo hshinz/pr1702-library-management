@@ -25,7 +25,10 @@
 /spring/*.pid
 
 # Database
-/config/database.yml
+config/database.yml
+
+# Secret key
+config/secrets.yml
 
 config/settings.local.yml
 config/settings/*.local.yml
