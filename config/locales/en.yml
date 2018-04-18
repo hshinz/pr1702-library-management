@@ -73,6 +73,18 @@ en:
         submit: "Submit"
         add_book: "Add a new book"
         cancel: "Cancel"
+    borrows:
+      borrow:
+        all_borrows: "All borrows"
+        accept: "Accept"
+        id: "Id"
+        user_id: "User Id"
+        book_id: "Book Id"
+        book_name: "Book name"
+        status: "Status"
+        date: "Date"
+      index:
+        list: "Borrow list"
   books:
     index:
       all_books: "All books"

@@ -1,8 +1,9 @@
 class BorrowsController < ApplicationController
-  before_action :logged_in_user, only: [:create, :destroy]
+ before_action :logged_in_user, except: [:index, :edit, :update, :destroy]
+ before_action :verify_admin, only: [:index, :create, :destroy]
 
   def index
-    @borrows = Borrow.paginate page: params[:page], per_page: Setting.borrows.page
+    @borrows = Borrow.load_by_order.paginate page: params[:page], per_page: Setting.borrows.page
   end
 
   def new
@@ -22,9 +23,11 @@ class BorrowsController < ApplicationController
     end
   end
 
-  private
+  def destroy
+  end
+
+private
 
   def borrow_params
     params.require(:borrow).permit :date, :book_id, :user_id
   end
-end

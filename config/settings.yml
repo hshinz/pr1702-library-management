@@ -12,3 +12,6 @@ book:
     description_maximum: 300
 book_form:
   description: 3
+borrows:
+  page: 10
+
