@@ -3,22 +3,22 @@ common: &common
   encoding: utf8
   reconnect: false
   pool: 5
-  host: localhost
-  username: root
-  password: ***
+  host: <%= ENV["HOST_NAME"] %>
+  username: <%= ENV["USERNAME"] %>
+  password: <%= ENV["PASSWORD"] %>
 
 development:
   <<: *common
-  database: lirary_development
+  database: <%= ENV["LIBRARY_MANAGEMENT_DEV"] %>
 
 test:
   <<: *common
-  database: lirary_test
+  database: <%= ENV["LIBRARY_MANAGEMENT_TEST"] %>
 
 staging:
   <<: *common
-  database: lirary_staging
+  database: <%= ENV["LIBRARY_MANAGEMENT_STG"] %>
 
 production:
   <<: *common
-  database: lirary
+  database: <%= ENV["LIBRARY_MANAGEMENT_PROD"] %>
